@@ -77,34 +77,21 @@ BlenderBot 400M: Good for conversational research queries
 FLAN-T5 Base: Effective for instruction-following and analysis tasks
 CodeBERTa Small: Suitable for technical and code-related research
 
-TROUBLESHOOTING
 
-Common Issues and Solutions
-
-Model Access Denied: If you receive a 403 error, try selecting a different model or verify your Hugging Face token has proper permissions. Some models may require special access permissions.
-
-Model Loading Errors: A 503 error indicates the model is still loading. Wait a moment and try again. Hugging Face models sometimes need time to initialize.
-
-Search Failures: If web search fails, check your internet connection and try again. The application uses DuckDuckGo search which requires active internet connectivity.
-
-Empty Results: If no results appear, try rephrasing your query or using more specific search terms. The system works best with clear, focused research questions.
-
-Performance Issues: For large research queries, the application may take several minutes to complete. The progress bar will show current status throughout the process.
 
 TECHNICAL ARCHITECTURE
 
 The application is built using a modular architecture with the ResearchAgent class handling all core functionality. The Streamlit framework provides the user interface, while external APIs handle search and language model operations. Data visualization is powered by Plotly, and all session management is handled through Streamlit's built-in state management system.
 
-LIMITATIONS
-
-The application is limited by the capabilities of the selected Hugging Face models and may not work with all available models due to access restrictions. Search results depend on DuckDuckGo availability and Wikipedia accessibility. The system requires active internet connectivity for all operations and API token limits may affect usage frequency.
-
-FUTURE ENHANCEMENTS
-
-Potential improvements include support for additional search engines, enhanced result filtering and relevance scoring, export functionality for research reports, improved caching mechanisms for faster repeat queries, and enhanced error handling and recovery systems.
 
 SUPPORT
 
 For technical issues related to the application, check the Streamlit documentation at https://docs.streamlit.io. For Hugging Face API issues, refer to https://huggingface.co/docs. For general Python package issues, consult the respective package documentation.
 
 This research agent represents a powerful tool for automated information gathering and analysis, suitable for students, researchers, professionals, and anyone needing comprehensive research capabilities with AI-powered insights.
+
+
+
+
+
+
